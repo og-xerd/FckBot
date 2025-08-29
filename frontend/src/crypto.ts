@@ -30,8 +30,6 @@ export async function decrypt(peerPublicKey: Uint8Array, privateKey: Uint8Array,
 export async function encrypt(peerPublicKey: Uint8Array, privateKey: Uint8Array, data: Uint8Array): Promise<Uint8Array> {
     const sharedSecret = nacl.box.before(peerPublicKey, privateKey);
 
-    console.log(sharedSecret);
-
     const iv = crypto.getRandomValues(new Uint8Array(12));
 
     const key = await window.crypto.subtle.importKey(
