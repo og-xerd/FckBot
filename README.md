@@ -49,6 +49,17 @@ or
 }
 ```
 
+| Key                    | Value       | Description                                                  |
+| -----------------------|-------------|--------------------------------------------------------------|
+| example                | boolean     | specifies whether cors and exampleEndpoint should be enabled |
+| host                   | string      | if it is "" it works for 0.0.0.0                             |
+| port                   | int         | the port on which the backend is to operate                  |
+| apikey                 | string      | api key to be used for verifyChallenge                       |
+| challenge.difficulty   | [int, int]  | determines the difficulty of the challenge                   |
+| challenge.latency      | [int, int]  | specifies the latency in the challenge                       |
+| paths.get_challenge    | string      | specifies the path for getChallenge                          |
+| paths.verify_challenge | string      | specifies the path for verifyChallenge                       |
+
 ## 🔧 Technologies used
 
 ### Perfect frontend
