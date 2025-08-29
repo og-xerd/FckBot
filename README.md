@@ -30,7 +30,7 @@
 or
 ```go build```
 
-### Settings.json
+### [settings.json](/backend/settings.json)
 
 ```
 {
