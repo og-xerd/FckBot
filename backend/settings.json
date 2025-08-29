@@ -1,0 +1,14 @@
+{
+    "example": true,
+    "host": "",
+    "port": 4000,
+    "apikey": "siemasdkas",
+    "challenge": {
+        "difficulty": [8, 16],
+        "latency": [100, 300]
+    },
+    "paths": {
+        "get_challenge": "/getChallenge",
+        "verify_challenge": "/verifyChallenge"
+    }
+}
